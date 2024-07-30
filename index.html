@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#009578">
+    
+    <link rel="manifest" href="manifest.json">
+
+    <title>TaskTracker</title>
+    <link rel="shortcut icon" type="image/png" href="joe-512.png">
+</head>
+<body>
+<input type="button" value="EC"  onclick="kooi()">
+<input type="button" value="CL"onclick="pooi()">
+<br><br><br><br><br><br><br><br>
+
+
+<input type="text"  id="tt" ><br><br>
+<input type="text" id="ss" >
+
+<button onclick="myFunction()">Try it</button>
+<p id ="muhu"></p>
+<fieldset id="gkp"   style="display : none;" >
+<input type="text" onchange="ii()"id="mm"  >
+
+    <input type="checkbox" id="hh">DCDN <br><br>
+
+<input type="text" id="bb"  ><br>
+<button id="dd" onclick="gg()">ok</button>
+
+<p id="s" ></p> 
+</fieldset>
+
+<script src="script.js"></script>
+<script>
+function myFunction() {
+  var str = document.getElementById("ss").value; 
+var kk = document.getElementById("tt").value;
+  var res = str.replace( kk , "");
+document.getElementById("ss").value= res;
+document.getElementById("muhu").innerHTML= res;
+
+
+}
+function gg(){
+var q = document.getElementById("mm");
+var p = document.getElementById("bb");
+var g = document.getElementById("hh");
+var m = q.value;
+p.value = "";
+if(g.checked == false){
+for(var i = 0; i<m.length; i++){
+ var o = m.charAt(i);
+ switch(o){
+ case "a": p.value = p.value + "n";
+ break;
+ case "b": p.value = p.value + "q";
+ break;
+ case "c": p.value = p.value + "u";
+ break;
+ case "d": p.value = p.value + "s";
+ break;
+ case "e": p.value = p.value + "o";
+ break;
+ case "f": p.value = p.value + "x";
+ break;
+ case "g": p.value = p.value + "1";
+ break;
+ case "h": p.value = p.value + "e";
+ break;
+ case "i": p.value = p.value + "z";
+ break;
+ case "j": p.value = p.value + "2";
+ break;
+ case "k": p.value = p.value + "p";
+ break;
+ case "l": p.value = p.value + "4";
+ break;
+ case "m": p.value = p.value + "g";
+ break;
+ case "n": p.value = p.value + "6";
+ break;
+ case "o": p.value = p.value + "l";
+ break;
+ case "p": p.value = p.value + "a";
+ break;
+ case "q": p.value = p.value + "j";
+ break;
+ case "r": p.value = p.value + "v";
+ break;
+ case "s": p.value = p.value + ":";
+ break;
+ case "t": p.value = p.value + ".";
+ break;
+ case "u": p.value = p.value + ";";
+ break;
+ case "v": p.value = p.value + "@";
+ break;
+ case "w": p.value = p.value + ",";
+ break;
+ case "x": p.value = p.value + "i";
+ break;
+ case "y": p.value = p.value + "0";
+ break;
+ case "z": p.value = p.value + "8";
+ break;
+ case "1": p.value = p.value + "y";
+ break;
+ case "2": p.value = p.value + "d";
+ break;
+ case "3": p.value = p.value + "5";
+ break;
+ case "4": p.value = p.value + "r";
+ break;
+ case "5": p.value = p.value + "7";
+ break;
+ case "6": p.value = p.value + "t";
+ break;
+ case "7": p.value = p.value + "3";
+ break;
+ case "8": p.value = p.value + "b";
+ break;
+ case "9": p.value = p.value + "h";
+ break;
+ case "0": p.value = p.value + "w";
+ break;
+ case "@": p.value = p.value + "k";
+ break;
+ case ".": p.value = p.value + "f";
+ break;
+ case ",": p.value = p.value + "m";
+ break;
+ case ";": p.value = p.value + "a";
+ break;
+ case ":": p.value = p.value + "c";
+ break;
+ case " ": p.value = p.value + "?";
+ break;
+  default: p.value = p.value + o;
+ }
+ }
+}else{for(var i = 0; i<m.length; i++){
+ var o = m.charAt(i);
+ switch(o){
+ case "n": p.value = p.value + "a";
+ break;
+ case "q": p.value = p.value + "b";
+ break;
+ case "u": p.value = p.value + "c";
+ break;
+ case "s": p.value = p.value + "d";
+ break;
+ case "o": p.value = p.value + "e";
+ break;
+ case "x": p.value = p.value + "f";
+ break;
+ case "1": p.value = p.value + "g";
+ break;
+ case "e": p.value = p.value + "h";
+ break;
+ case "z": p.value = p.value + "i";
+ break;
+ case "2": p.value = p.value + "j";
+ break;
+ case "p": p.value = p.value + "k";
+ break;
+ case "4": p.value = p.value + "l";
+ break;
+ case "g": p.value = p.value + "m";
+ break;
+ case "6": p.value = p.value + "n";
+ break;
+ case "l": p.value = p.value + "o";
+ break;
+ case "a": p.value = p.value + "p";
+ break;
+ case "j": p.value = p.value + "q";
+ break;
+ case "v": p.value = p.value + "r";
+ break;
+ case ":": p.value = p.value + "s";
+ break;
+ case ".": p.value = p.value + "t";
+ break;
+ case ";": p.value = p.value + "u";
+ break;
+ case "@": p.value = p.value + "v";
+ break;
+ case ",": p.value = p.value + "w";
+ break;
+ case "i": p.value = p.value + "x";
+ break;
+ case "0": p.value = p.value + "y";
+ break;
+ case "8": p.value = p.value + "z";
+ break;
+ case "y": p.value = p.value + "1";
+ break;
+ case "d": p.value = p.value + "2";
+ break;
+ case "5": p.value = p.value + "3";
+ break;
+ case "r": p.value = p.value + "4";
+ break;
+ case "7": p.value = p.value + "5";
+ break;
+ case "t": p.value = p.value + "6";
+ break;
+ case "3": p.value = p.value + "7";
+ break;
+ case "b": p.value = p.value + "8";
+ break;
+ case "h": p.value = p.value + "9";
+ break;
+ case "w": p.value = p.value + "0";
+ break;
+ case "k": p.value = p.value + "@";
+ break;
+ case "f": p.value = p.value + ".";
+ break;
+ case "m": p.value = p.value + ",";
+ break;
+ case "a": p.value = p.value + ";";
+ break;
+ case "c": p.value = p.value + ":";
+ break;
+ case "?": p.value = p.value + " ";
+ break;
+ default: p.value = p.value + o;
+ }
+ 
+ }
+
+}
+document.getElementById("s").innerHTML = p.value;
+}
+function ii(){
+var str = document.getElementById("mm").value;
+  var res = str.toLowerCase();
+  document.getElementById("mm").value = res;
+}
+function kooi(){
+var sinu = document.getElementById("gkp");
+if(sinu.style.display == 'none'){
+sinu.style.display = "block";
+} else{
+sinu.style.display = "none";
+}
+}
+function pooi(){
+document.getElementById("ss").value ="";
+document.getElementById("mm").value ="";
+document.getElementById("tt").value ="";
+document.getElementById("bb").value ="";
+}
+
+
+</script>
+</body>
+</html>
