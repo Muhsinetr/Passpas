@@ -1,0 +1,49 @@
+.encodBody{
+    display: none;
+}
+.encodeWraper{
+    height: 400px;
+    width: 360px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.fsection,.Ssection{
+    height: 40%;
+    width: 95%;
+    border: 1px solid red;
+}
+.fsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Ssection{
+    overflow: scroll;
+    width: 332px;
+    padding: 5px;
+}
+    
+.Ssection::-webkit-scrollbar {
+    display: none;
+  }
+.controler{
+    width: 95%;
+    height: 8%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cnvbtn{
+    height: 25px;
+    width: 80px;
+    border-radius: 10px;
+}
+.txtarea{
+    height: 95%;
+    width: 95%;
+    resize: none;
+}
