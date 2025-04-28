@@ -1,0 +1,54 @@
+.exaTime{
+    display: none;
+}
+/* .exaWrap{
+    height: 400px;
+    width: 360px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.exaWrap p {
+    color: red;
+    font-size: 60px;
+}
+.btn{
+border: 1px solid red;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+#display {
+    font-size: 70px;
+    margin: 30px;
+}
+.exaTime button {
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    transition: all 0.3s;
+}
+.exaTime button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+#stopBtn {
+    background-color: #f44336;
+}
+#stopBtn:hover {
+    background-color: #d32f2f;
+}
+#resetBtn {
+    background-color: #2196F3;
+}
+#resetBtn:hover {
+    background-color: #0b7dda;
+}

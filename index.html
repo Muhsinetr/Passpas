@@ -8,6 +8,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styleCalc.css">
     <link rel="stylesheet" href="styleEncode.css">
+    <link rel="stylesheet" href="styleExa.css">
 
     <title>TaskTracker</title>
     <link rel="shortcut icon" type="image/png" href="joe-512.png">
@@ -66,7 +67,19 @@
     </div>
 </div>
 
-
+<div class="exaTime">
+    <!-- <div class="exaWrap">
+        <p class="timer">00:55</p>
+    </div>
+    <div class="btn">
+        <input type="button" class="timeBtn" value="Start" onclick="startTimer('ok')">
+        <input type="button" class="timeBtn" value="Reset" onclick="startTimer('stope')">
+    </div> -->
+    <div id="display" style="color: red">00:00</div>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">Reset</button>
+</div>
 
 
 <audio id="myAudio">
@@ -78,5 +91,6 @@
 
     <script src="scriptCalc.js"></script>
     <script src="scriptEncode.js"></script>
+    <script src="scriptExa.js"></script>
 </body>
 </html>

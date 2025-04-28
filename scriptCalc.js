@@ -4,6 +4,7 @@ var numberbody = document.querySelector(".numbers");
 var calTotal = document.querySelector(".calc");
 let Errortune = document.getElementById("myAudio"); 
 let encodeBody = document.querySelector(".encodBody");
+let exaTime = document.querySelector(".exaTime");
 let displaynum = 0;
 let firstSet = 0;
 let finalSet = 0;
@@ -52,6 +53,9 @@ function getClear(){
     if(display.innerText == 1997){
         calTotal.style.display = "none";
         encodeBody.style.display = "block";
+    }else if(display.innerText == 1998){
+        calTotal.style.display = "none";
+        exaTime.style.display = "block";
     };
 firstSet = 0;
 finalSet = 0;
