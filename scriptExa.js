@@ -49,6 +49,23 @@ let timerInterval;
 let isRunning = false;
 let lastColorChangeTime = 0;
 
+
+/////Awake screen
+let wakeLock = null;
+
+async function requestWakeLock() {
+  try {
+    wakeLock = await navigator.wakeLock.request('screen');
+    console.log('Wake Lock is active');
+    
+    wakeLock.addEventListener('release', () => {
+      console.log('Wake Lock was released');
+    });
+  } catch (err) {
+    console.error(`${err.name}, ${err.message}`);
+  }
+}
+
 // Format time as MM:SS
 function formatTime(milliseconds) {
     let totalSeconds = Math.floor(milliseconds / 1000);
@@ -85,8 +102,14 @@ function startTimer() {
         isRunning = true;
         startBtn.disabled = true;
         stopBtn.disabled = false;
-        document.getElementById('keepAwakeVideo').play();
-        console.log("play");
+
+        document.addEventListener('visibilitychange', async () => {
+            if (wakeLock !== null && document.visibilityState === 'visible') {
+              await requestWakeLock();
+              console.log("its workinggi");
+              
+            }
+          });
         
     }
 }
@@ -99,8 +122,6 @@ function stopTimer() {
         startBtn.disabled = false;
         stopBtn.disabled = true;
     }
-    document.getElementById('keepAwakeVideo').remove();
-    console.log("stope");
     
 }
 
