@@ -85,6 +85,9 @@ function startTimer() {
         isRunning = true;
         startBtn.disabled = true;
         stopBtn.disabled = false;
+        document.getElementById('keepAwakeVideo').play();
+        console.log("play");
+        
     }
 }
 
@@ -96,6 +99,9 @@ function stopTimer() {
         startBtn.disabled = false;
         stopBtn.disabled = true;
     }
+    document.getElementById('keepAwakeVideo').remove();
+    console.log("stope");
+    
 }
 
 // Reset the timer
